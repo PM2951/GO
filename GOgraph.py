@@ -5,10 +5,10 @@ from matplotlib import pyplot as plt
 from io import BytesIO
 import matplotlib.font_manager as fm
 
-FONT_PATH = '/content/virtual_libraries/src/python/fonts/Arial.ttf'
+FONT_PATH = '/content/GO/font/Arial.ttf'
 fp = fm.FontProperties(fname=FONT_PATH) 
 
-font_files = fm.findSystemFonts(fontpaths='/content/virtual_libraries/src/python/fonts/')
+font_files = fm.findSystemFonts(fontpaths='/content/GO/font/')
 for font_file in font_files:
     fm.fontManager.addfont(font_file)
 plt.rcParams['font.family'] = 'Arial'
