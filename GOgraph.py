@@ -36,7 +36,7 @@ if len(txt) !=0:
     options = st.multiselect('Select four datas!', header_data)
         
     if len(options) !=4 :
-        st.dataframe(data)
+        st.table(data)
     else:
         tab1, tab2 = st.tabs(["📈 Graph", "🗃 Data"])
         tab1.subheader("A tab with a graph")
