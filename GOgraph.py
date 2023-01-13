@@ -14,6 +14,7 @@ for font_file in font_files:
 plt.rcParams['font.family'] = 'Arial'
 
 st.title('GO heatmap maker')
+st.sidebar.write('')
 
 txt = st.text_area('GOデータをエクセルからコピペ↓')
 
