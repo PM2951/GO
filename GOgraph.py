@@ -91,7 +91,7 @@ def make_graph(data, height, width, count, vmax, vmin, cmap, plotsize, xmin, xma
 st.title('GO heatmap Graph')
 st.sidebar.write('')
 
-txt = st.text_area('AGI listを入力')
+txt = st.text_area('Panther GOの結果をペースト')
 
 #sidebars
 height = st.sidebar.number_input('Figure size (height)', value=12)
