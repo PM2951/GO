@@ -52,9 +52,7 @@
 
    初めての場合はEmailを聞かれますが、Emailっぽい形式であればなんでも大丈夫です。
 
-   例) example@example.com
-
-   など
+   例) example@example.com　など
    
 
    
