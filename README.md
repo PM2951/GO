@@ -41,7 +41,7 @@
    以下のコマンドでアプリケーションを起動します。
 
    ```bash
-   streamlit run streamlit_app.py
+   streamlit run GOgraph.py
    ```
 
 5. **アプリケーションにアクセスする**
