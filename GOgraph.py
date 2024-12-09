@@ -10,9 +10,9 @@ import matplotlib.font_manager as fm
 # FONT_PATH = '/content/GO/font/Arial.ttf'
 # fp = fm.FontProperties(fname=FONT_PATH)
 
-# font_files = fm.findSystemFonts(fontpaths='/content/GO/font/')
-# for font_file in font_files:
-#     fm.fontManager.addfont(font_file)
+font_files = fm.findSystemFonts(fontpaths='/font/')
+for font_file in font_files:
+    fm.fontManager.addfont(font_file)
 
 with st.spinner('Wait for it...'):
     plt.rcParams['font.family'] = 'Arial'
