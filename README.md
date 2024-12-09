@@ -14,8 +14,8 @@
    リポジトリをローカル環境にクローンします。
 
    ```bash
-   git clone <リポジトリのURL>
-   cd <リポジトリ名>
+   git clone https://github.com/PM2951/GO.git
+   cd GO
    ```
    もしくは、zipファイルをダウンロードして解凍してください。
 
