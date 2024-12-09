@@ -50,6 +50,12 @@
    streamlit run GO/GOgraph.py
    ```
 
+   初めての場合はEmailを聞かれますが、Emailっぽい形式であればなんでも大丈夫です。
+
+   例) example@example.com
+
+   など
+   
 
    
 6. **アプリケーションにアクセスする**
