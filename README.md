@@ -60,12 +60,16 @@
 
    tair : https://v2.arabidopsis.org/tools/go_term_enrichment.jsp
 
+   PantherGOの結果から、以下のような表を取得してください。
+
 | GO biological process complete                      | Arabidopsis thaliana - REFLIST (27475) | upload_1 (2435) | upload_1 (expected)| upload_1 (over/under) | upload_1 (fold Enrichment) | upload_1 (P-value) |
 |-----------------------------------------------------|-----------------------------------------|------------------|----------------------|------------------------|----------------------------|---------------------|
 | response to chitin (GO:0010200)                    | 23                                      | 13               | 2.04              | +                      | 6.38                       | 2.73E-05           |
 | cellular response to hypoxia (GO:0071456)          | 237                                     | 119              | 21.00              | +                      | 5.67                       | 3.95E-58           |
 | cellular response to decreased oxygen levels (GO:0036294) | 239                                     | 120              | 21.18              | +                      | 5.67                       | 1.22E-58           |
 
+
+   これを、Streamlit アプリ上のテキストボックスに入力するとグラフが作成できます。
 
 8. **アプリケーションの終了**
 
