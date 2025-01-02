@@ -51,7 +51,7 @@ def make_graph(data, height, width, count, vmax, vmin, cmap, plotsize, xmin, xma
         plt.scatter([], [], c='k', s=size_i, label=label)
     plt.legend(loc="upper right", bbox_to_anchor=(0.5, -0.15),
                frameon=False, ncol=6, title='Gene count')
-    plt.tight_layout()
+    plt.tight_layout(pad=2)
     st.pyplot(fig)
     return fig
 
