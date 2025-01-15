@@ -16,27 +16,10 @@
    ```bash
    git clone https://github.com/PM2951/GO.git
    cd GO
-   ```
-   もしくは、zipファイルをダウンロードして解凍してください。
-
-2. **仮想環境を作成して有効化する (任意)**
-
-   仮想環境を作成することで、依存関係の競合を防ぐことができます。なくても実行可能です。
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Windows の場合: venv\Scripts\activate
-   ```
-
-3. **必要なライブラリをインストールする**
-
-   必要な Python ライブラリをインストールします。
-
-   ```bash
    pip install -r requirements.txt
    ```
 
-4. **Streamlit アプリを実行する**
+2. **アプリを実行する**
 
    以下のコマンドでアプリケーションを起動します。
 
@@ -50,17 +33,11 @@
    streamlit run GO/GOgraph.py
    ```
 
-   初めての場合はEmailを聞かれますが、Emailっぽい形式であればなんでも大丈夫です。
-
-   例) example@example.com　など
-
-   コマンドを実行すると、ローカルサーバーが起動します。表示される URL（通常は `http://localhost:8501`）をブラウザで開くことで、アプリケーションにアクセスできます。
    
-6. **PantherGOからGene ontologyの結果を取得する**
+# PantherGOからGene ontologyの結果を取得する
 
-   tair : https://v2.arabidopsis.org/tools/go_term_enrichment.jsp
-
-   PantherGOの結果から、以下のような表を取得してください。
+   - tair : https://v2.arabidopsis.org/tools/go_term_enrichment.jsp
+   - PantherGOの結果から、以下のような表を取得してください。（→ export table）
 
 | GO biological process complete                      | Arabidopsis thaliana - REFLIST (27475) | upload_1 (2435) | upload_1 (expected)| upload_1 (over/under) | upload_1 (fold Enrichment) | upload_1 (P-value) |
 |-----------------------------------------------------|-----------------------------------------|------------------|----------------------|------------------------|----------------------------|---------------------|
@@ -69,18 +46,7 @@
 | cellular response to decreased oxygen levels (GO:0036294) | 239                                     | 120              | 21.18              | +                      | 5.67                       | 1.22E-58           |
 
 
-   これを、Streamlit アプリ上のテキストボックスに入力するとグラフが作成できます。
+   - これを、アプリ上のテキストボックスに入力するとグラフが作成できます。
 
-8. **アプリケーションの終了**
-
-   ターミナル上で [control + c] を押し、終了させる。
-
-## 注意事項
-
-- `requirements.txt` に記載されている依存関係を適切にインストールできない場合、環境や Python のバージョンを確認してください。
-- 問題が発生した場合は、エラーメッセージを確認し、必要に応じて `pip` や Streamlit のドキュメントを参照してください。
-
-## ライセンス
-
-このプロジェクトのライセンスに関する情報は `LICENSE` ファイルをご参照ください。
+   - プロットをPNG画像（800 dpi, 背景透過）として保存できます。
 
