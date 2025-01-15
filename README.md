@@ -24,13 +24,13 @@
    以下のコマンドでアプリケーションを起動します。
 
    ```bash
-   streamlit run GOgraph.py
+   python GOgraph_app.py
    ```
 
    もしくは、
    
    ```bash
-   streamlit run GO/GOgraph.py
+   python GO/GOgraph_app.py
    ```
 
    
