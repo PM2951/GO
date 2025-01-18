@@ -35,23 +35,26 @@ def generate_matplotlib_figure(go_data: str, params: PlotParameters) -> plt.Figu
         txt = go_data.splitlines()
         txt = [s.split("\t") for s in txt]
         data = pd.DataFrame(txt[1:], columns=txt[0])
-        h = data.iloc[0]
-        data.columns = h
-        data = data.drop(data.index[0])
-        data = data.reset_index(drop=True)
         data.columns = ['GO term', 'REFLIST (27430)', "number_in_list",
                         "expected count", "(over/under)", "fold_enrichment", "pValue"]
-        data = data[data["(over/under)"] == "+"].copy()
+        data['fold_enrichment'] = data['fold_enrichment'].astype(float)
+        data['pValue'] = data['pValue'].astype(float)
+        data['number_in_list'] = data['number_in_list'].astype(float)
+        # data = data[data["(over/under)"] == "+"].copy()
         data = data[data["GO term"] != "Unclassified (UNCLASSIFIED)"].copy()
 
-        fig, ax = plt.subplots(figsize=(params.width, params.height))
-        module_GO_top = data.sort_values(by='fold_enrichment', ascending=False).head(params.count)
-        module_GO_top = module_GO_top.sort_values(by='fold_enrichment', ascending=True)
+        
+        module_GO_top = data.sort_values(by='fold_enrichment', ascending=False)
+        module_GO_top = module_GO_top.iloc[:params.count, :].copy()
+        module_GO_top = module_GO_top.sort_values(by='fold_enrichment', ascending=True).copy()
+        module_GO_top = module_GO_top.reset_index(drop=True)
+
         y = module_GO_top['GO term']
         x = module_GO_top['fold_enrichment'].astype(float)
         c = module_GO_top['pValue'].astype(float)
         size = module_GO_top['number_in_list'].astype(int)
 
+        fig, ax = plt.subplots(figsize=(params.width, params.height))
         ax.scatter(x, y, c=c, s=size * params.plotsize, linewidths=0.5, edgecolors='black', cmap='Spectral',
                     norm=LogNorm(vmax=params.vmax, vmin=params.vmin))
 
