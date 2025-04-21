@@ -1,15 +1,13 @@
-# Streamlit アプリの実行方法
-
-このリポジトリには、`streamlit_app.py` という Streamlit アプリケーションのスクリプトが含まれています。このアプリケーションをローカル環境で実行するための手順を以下に示します。
+# GO アプリの実行方法
 
 ## 必要要件
 
-- Python 3.7 以上
+- Python 3.7 以上 他サイトを参照してインストールしてください（例）https://prog-8.com/docs/python-env
 - 必要な Python ライブラリは `requirements.txt` に記載されています。
 
 ## 事前準備
 
-**リポジトリをクローンする**
+**1度実行すればその後は実行する必要ないです**
 
    リポジトリをローカル環境にクローンします。
 
@@ -35,6 +33,7 @@
    python GO/GOgraph_app.py
    ```
 
+   環境によっては"python"を"python3"と置き換えて実行してください。
    
 # PantherGOからGene ontologyの結果を取得する
 
