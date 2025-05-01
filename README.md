@@ -15,6 +15,7 @@
    git clone https://github.com/PM2951/GO.git
    cd GO
    pip install -r requirements.txt
+   cd ~
    ```
 
 ## 実行
@@ -22,15 +23,9 @@
 **アプリを起動する**
 
    ターミナルにて以下のコマンドでアプリケーションを起動します。
-
-   ```bash
-   python GOgraph_app.py
-   ```
-
-   もしくは、
    
    ```bash
-   python GO/GOgraph_app.py
+   python ~/GO/GOgraph_app.py
    ```
 
    環境によっては"python"を"python3"と置き換えて実行してください。
