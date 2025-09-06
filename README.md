@@ -2,7 +2,7 @@
 
 ## 必要要件
 
-- Python 3.7 以上 他サイトを参照してインストールしてください（例）https://prog-8.com/docs/python-env
+- Python 3.7 以降。[参照](https://github.com/PM2951/Python-forMAC/blob/main/readme.md)
 - 必要な Python ライブラリは `requirements.txt` に記載されています。
 
 ## 事前準備
