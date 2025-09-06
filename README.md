@@ -2,8 +2,7 @@
 
 ## 必要要件
 
-- Python 3.7 以降。[参照](https://github.com/PM2951/Python-forMAC/blob/main/readme.md)
-- 必要な Python ライブラリは `requirements.txt` に記載されています。
+- Python 3.7 以降。[参照](https://github.com/PM2951/Python-forMAC/blob/main)
 
 ## 事前準備
 
